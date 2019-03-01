@@ -1,3 +1,7 @@
 [submodule "ToolboxLS"]
 	path = ToolboxLS
 	url = https://github.com/risk-sensitive-reachability/ToolboxLS
+[submodule "helperOC"]
+	path = helperOC
+	url = https://github.com/risk-sensitive-reachability/helperOC
+	branch = octave
