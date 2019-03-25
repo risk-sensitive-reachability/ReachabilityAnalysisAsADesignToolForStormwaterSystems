@@ -1,6 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % PURPOSE: Provides a Watershed class definition inheriting from DynSys base
-%          class. This class is used by HJIPDE_solve method in ToolboxLS.
+%          class. This class is used by HJIPDE_solve method in helperOC.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 classdef Watershed < DynSys
     properties

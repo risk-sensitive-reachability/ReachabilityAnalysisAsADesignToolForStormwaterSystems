@@ -1,6 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % PURPOSE: A function that describes the system dynamics, used by 
-%          HJIPDE_solve in ToolboxLS. It has definitions for both
+%          HJIPDE_solve in helperOC. It has definitions for both
 %          the two-state and three-state scenario options. If a two-state
 %          simulation is run, the dynamics of the third state will not be 
 %          evaluated.

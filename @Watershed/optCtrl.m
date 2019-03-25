@@ -1,6 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % PURPOSE: A function for determining optimal control used by HJIPDE_solve
-%          in ToolboxLS. There are two control states:
+%          in helperOC. There are two control states:
 %               0 = outlet fully closed
 %               1 = outlet fully open
 %

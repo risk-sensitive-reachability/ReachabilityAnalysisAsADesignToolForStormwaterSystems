@@ -1,6 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % PURPOSE: A stub for the optimal disturbance function used by
-%          HJIPDE_solve in ToolboxLS. In our instance the disturbance
+%          HJIPDE_solve in helperOC. In our instance the disturbance
 %          is non-adversarial so this function does not impact the
 %          system's dynamics.
 % INPUT:
