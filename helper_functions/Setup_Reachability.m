@@ -40,6 +40,55 @@ myWorld = createGrid(grid_min, grid_max, N );                                   
 
 gx = shapeRectangleByCorners(myWorld, grid_min + config.grid_spacing, scenario.K_max);      % g(x) = surface over constraint set, K
 
+% nx = prod(myWorld.N); 
+% 
+% if scenario.dim == 2
+%     z = 1; 
+%     xcoord = zeros(nx,2); 
+%     xindex = zeros(nx,2); 
+%     for i = 1:N(1)
+%         for j = 1:N(2)
+%             z = z + 1; 
+%             xcoord(z,1) = cell2mat(myWorld.xs(1)); 
+%             xcoord(z,2) = cell2mat(myWorld.xs(2));
+%             xindex(z,1) = i; 
+%             xindex(z,2) = j; 
+%         end
+%     end
+%     
+%     gx = signed_distance_from_Kmax(xcoord, scenario.K_max);
+%     gx = reshape(gx, [N(2), N(1)]); 
+%     
+% else 
+%     z = 0; 
+%     xcoord = zeros(nx,3); 
+%     xindex = zeros(nx,3); 
+%     for i = 1:N(1)
+%         for j = 1:N(2)
+%             for k = 1:N(3)
+%                 z = z + 1; 
+%                 
+%                 x1s = cell2mat(myWorld.xs(1)); 
+%                 x2s = cell2mat(myWorld.xs(2));
+%                 x3s = cell2mat(myWorld.xs(3)); 
+%                 
+%                 xcoord(z,1) = x1s(i,j,k);
+%                 xcoord(z,2) = x2s(i,j,k);
+%                 xcoord(z,3) = x3s(i,j,k);
+%                 
+%                 xindex(z,1) = i; 
+%                 xindex(z,2) = j; 
+%                 xindex(z,3) = k; 
+%                 
+%             end
+%         end
+%     end
+%     
+%     gx = signed_distance_from_Kmax(xcoord, scenario.K_max);
+%     gx = reshape(gx, [N(3), N(2), N(1)]); 
+%     
+% end
+
 tau = 0 : config.plot_update_interval : config.simulation_length;                           % time vector for graph update [sec]
 
 % determine dimensions to plot, setup figure annotations for the specified view
